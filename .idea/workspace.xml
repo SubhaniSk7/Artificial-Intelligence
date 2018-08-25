@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5f2eb3f-9504-479f-b09a-752c584b3714" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment_1/ColoringBFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/ColoringBFS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment_1/ColoringDFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/ColoringDFS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_1/SampleIDA*.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/SampleIDA*.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,27 +29,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="29" />
+          <entry key="py" value="31" />
           <entry key="pyi" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="29" />
+          <entry key="Python" value="31" />
           <entry key="PythonStub" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="66" />
-          <entry key="py" value="13594" />
+          <entry key="py" value="13628" />
           <entry key="pyi" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="66" />
-          <entry key="Python" value="13594" />
+          <entry key="Python" value="13628" />
           <entry key="PythonStub" value="2" />
         </counts>
       </usages-collector>
@@ -60,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="148" column="23" selection-start-line="148" selection-start-column="23" selection-end-line="148" selection-end-column="23" />
+            <state relative-caret-position="90">
+              <caret line="144" column="27" lean-forward="true" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -72,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assignment_1/SampleIDA*.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="247" column="34" selection-start-line="247" selection-start-column="34" selection-end-line="247" selection-end-column="34" />
+            <state relative-caret-position="319">
+              <caret line="193" lean-forward="true" selection-start-line="193" selection-end-line="193" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -142,9 +142,9 @@
         <option value="$PROJECT_DIR$/Assignment_1/puzzleBFS.py" />
         <option value="$PROJECT_DIR$/Assignment_1/PuzzleA*.py" />
         <option value="$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py" />
-        <option value="$PROJECT_DIR$/Assignment_1/SampleIDA*.py" />
         <option value="$PROJECT_DIR$/Assignment_1/ColoringBFS.py" />
         <option value="$PROJECT_DIR$/Assignment_1/ColoringDFS.py" />
+        <option value="$PROJECT_DIR$/Assignment_1/SampleIDA*.py" />
       </list>
     </option>
   </component>
@@ -153,6 +153,18 @@
     <option name="y" value="47" />
     <option name="width" value="1221" />
     <option name="height" value="595" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>RegExp</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -188,7 +200,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../LearningPython" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -342,7 +354,7 @@
     <frame x="0" y="25" width="1366" height="698" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11969697" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09621212" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
@@ -359,7 +371,7 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32954547" />
-      <window_info anchor="right" id="Run" order="5" visible="true" weight="0.38333333" />
+      <window_info anchor="right" id="Run" order="5" weight="0.49015152" />
       <window_info anchor="right" id="Python Console" order="6" weight="0.3287879" />
     </layout>
   </component>
@@ -455,31 +467,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1/ColoringBFS.py">
+    <entry file="file://$PROJECT_DIR$/Assignment_1/ColoringDFS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="223" column="48" selection-start-line="223" selection-start-column="48" selection-end-line="223" selection-end-column="48" />
+        <state relative-caret-position="81">
+          <caret line="278" lean-forward="true" selection-start-line="278" selection-end-line="278" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1535188268414" expanded="true" signature="3001:3004" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1/ColoringDFS.py">
+    <entry file="file://$PROJECT_DIR$/Assignment_1/ColoringBFS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="135" column="23" lean-forward="true" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="23" />
+        <state relative-caret-position="124">
+          <caret line="131" column="41" selection-end-line="332" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+            <marker date="1535190356583" expanded="true" signature="3001:3004" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="148" column="23" selection-start-line="148" selection-start-column="23" selection-end-line="148" selection-end-column="23" />
+        <state relative-caret-position="90">
+          <caret line="144" column="27" lean-forward="true" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -488,8 +500,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignment_1/SampleIDA*.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="247" column="34" selection-start-line="247" selection-start-column="34" selection-end-line="247" selection-end-column="34" />
+        <state relative-caret-position="319">
+          <caret line="193" lean-forward="true" selection-start-line="193" selection-end-line="193" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

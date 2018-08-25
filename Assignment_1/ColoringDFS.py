@@ -196,7 +196,7 @@ def coloringBFS(puzzleNode, frequency):
             # print('parent:', ele.getParent());
             # time.sleep(1);
             if ((ele.getState() not in listObj) or (ele.getState() not in explored)):
-                if (GoalTest(ele.getState()) and frequencyCheck(node.getState(), frequency)):
+                if (GoalTest(ele.getState()) and frequencyCheck(ele.getState(), frequency)):
                     print('**********Goal Found.**********');
                     print(ele.getState());
                     # return ele.getState();
@@ -283,7 +283,8 @@ for i in range(0, n):
 # a = [[1, 1], [1, 1]];
 # a = [[1, 2, 3], [2, 3, 1], [3, 1, 2]];
 # a = [[1, 2, 3], [2, 3, 1], [1, 1, 1]];
-a = [[1, 2], [3, 4]];
+# a = [[1, 2], [3, 4]];
+a = [[1, 1], [2, 3]];
 
 for i in range(0, n):
     print(a[i]);

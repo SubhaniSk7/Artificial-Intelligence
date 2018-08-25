@@ -218,11 +218,7 @@ def moveUp(currentNode, blankIndexI, blankIndexJ):
         tempNode.setHeuristicCost(heuristic(tempNode.getState()));
         tempNode.setTotalCost(int(tempNode.getPathCost() + tempNode.getHeuristicCost()));
 
-        # print('in Up: path-', tempNode.getPathCost(), ',heuristic:', tempNode.getHeuristicCost(), ',total:',
-        #       tempNode.getTotalCost());
-        # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
-        # children.put(tempNode);
         children.append(tempNode);
 
 
@@ -239,12 +235,7 @@ def moveDown(currentNode, blankIndexI, blankIndexJ):
         tempNode.setHeuristicCost(heuristic(tempNode.getState()));
         tempNode.setTotalCost(int(tempNode.getPathCost() + tempNode.getHeuristicCost()));
 
-        # print('in Down: path-', tempNode.getPathCost(), ',heuristic:', tempNode.getHeuristicCost(), ',total:',
-        # tempNode.getTotalCost());
-
-        # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
-        # children.put(tempNode);
         children.append(tempNode);
 
 
@@ -261,12 +252,7 @@ def moveLeft(currentNode, blankIndexI, blankIndexJ):
         tempNode.setHeuristicCost(heuristic(tempNode.getState()));
         tempNode.setTotalCost(int(tempNode.getPathCost() + tempNode.getHeuristicCost()));
 
-        # print('in Left: path-', tempNode.getPathCost(), ',heuristic:', tempNode.getHeuristicCost(), ',total:',
-        #       tempNode.getTotalCost());
-
-        # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
-        # children.put(tempNode);
         children.append(tempNode);
 
 
@@ -283,13 +269,8 @@ def moveRight(currentNode, blankIndexI, blankIndexJ):
         tempNode.setHeuristicCost(heuristic(tempNode.getState()));
         tempNode.setTotalCost(int(tempNode.getPathCost() + tempNode.getHeuristicCost()));
 
-        # print('in Right: path-', tempNode.getPathCost(), ',heuristic:', tempNode.getHeuristicCost(), ',total:',
-        #       tempNode.getTotalCost());
-
-        # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
 
-        # children.put(tempNode);
         children.append(tempNode);
 
 
