@@ -77,6 +77,7 @@ def compareDown(currentState, k, l):  # k=i,l=j # returns True if not equal or o
 
 def GoalTest(currentState):
     goal = True;
+
     for i in range(0, len(currentState)):
         for j in range(0, len(currentState)):
 
@@ -98,13 +99,37 @@ def GoalTest(currentState):
     return goal;
 
 
-def coloringBFS(puzzleNode):
+def frequencyCheck(currentState, frequency):
+    currentStateFreq = [0, 0, 0, 0];
+    freqCheck = False;
+    for i in range(0, len(currentState)):
+        for j in range(0, len(currentState)):
+            if (currentState[i][j] == 1):
+                currentStateFreq[0] += 1;
+
+            elif (currentState[i][j] == 2):
+                currentStateFreq[1] += 1;
+
+            elif (currentState[i][j] == 3):
+                currentStateFreq[2] += 1;
+
+            elif (currentState[i][j] == 4):
+                currentStateFreq[3] += 1;
+
+    print('current Frequency:', currentStateFreq);
+    if (frequency == currentStateFreq):
+        freqCheck = True;
+
+    return freqCheck;
+
+
+def coloringBFS(puzzleNode, frequency):
     print('In ColoringBFS....');
     node = puzzleNode;
     node.path_cost = 0;
 
-    if (GoalTest(node.getState())):
-        print('**********Goal Found.**********');
+    if (GoalTest(node.getState()) and frequencyCheck(node.getState(), frequency)):
+        print('first **********Goal Found.**********');
         return node;
 
     frontier = queue.Queue();
@@ -171,7 +196,7 @@ def coloringBFS(puzzleNode):
             # print('parent:', ele.getParent());
             # time.sleep(1);
             if ((ele.getState() not in listObj) or (ele.getState() not in explored)):
-                if (GoalTest(ele.getState())):
+                if (GoalTest(ele.getState()) and frequencyCheck(node.getState(), frequency)):
                     print('**********Goal Found.**********');
                     print(ele.getState());
                     # return ele.getState();
@@ -253,11 +278,12 @@ for i in range(0, n):
 # a = [[2, 1], [4, 4]];
 
 # a = [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]];
-a = [[1, 1, 1], [1, 1, 1], [1, 1, 1]];
+# a = [[1, 1, 1], [1, 1, 1], [1, 1, 1]];
 # a = [[1, 2, 3, 4], [1, 1, 1, 1], [1, 2, 3, 4], [1, 1, 1, 1]];
 # a = [[1, 1], [1, 1]];
 # a = [[1, 2, 3], [2, 3, 1], [3, 1, 2]];
 # a = [[1, 2, 3], [2, 3, 1], [1, 1, 1]];
+a = [[1, 2], [3, 4]];
 
 for i in range(0, n):
     print(a[i]);
@@ -268,9 +294,26 @@ print('Initial state:');
 for i in range(0, n):
     print(puzzleNode.getState()[i]);
 
+frequency = [0, 0, 0, 0];
+
+for i in range(0, n):
+    for j in range(0, n):
+        if (a[i][j] == 1):
+            frequency[0] += 1;
+            pass
+        elif (a[i][j] == 2):
+            frequency[1] += 1;
+            pass
+        elif (a[i][j] == 3):
+            frequency[2] += 1;
+            pass
+        elif (a[i][j] == 4):
+            frequency[3] += 1;
+
+print('Initial Frequency:', frequency);
 children = [];
 
-result = coloringBFS(puzzleNode);
+result = coloringBFS(puzzleNode, frequency);
 
 if (result != None):
     output = [];
