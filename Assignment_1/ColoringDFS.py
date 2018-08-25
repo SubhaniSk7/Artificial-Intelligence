@@ -1,7 +1,9 @@
 import copy
+import datetime
 import queue;
 
 # -------------------------------------------------
+import random
 import time
 
 
@@ -48,32 +50,56 @@ class PuzzleNode:
 
 # -------------------------------------------------
 
-def GoalTest(currentState):
-    # print('----------------------')
-    goal = False;
-    # count = 1;
-    count = 1;
-    for i in range(0, len(currentState)):
-        # print(currentState[i]);
-        for j in range(0, len(currentState)):
-            # print(currentState[i][j], end=' ');
+def compareLeft(currentState, k, l):  # k=i,l=j
 
-            if (i == len(currentState) - 1 and j == len(currentState) - 1):
-                continue;
-            if (currentState[i][j] == count):
-                count += 1;
-                goal = True;
-            else:
-                # print('--', currentState[i][j]);
-                goal = False;
-                # print('else goal:', goal, ' count:', count);
+    if (l != 0):
+        return not (currentState[k][l] == currentState[k][l - 1]);
+    return True;
+
+
+def compareRight(currentState, k, l):  # k=i,l=j
+    if (l != len(currentState) - 1):
+        return not (currentState[k][l] == currentState[k][l + 1]);
+    return True;
+
+
+def compareUp(currentState, k, l):  # k=i,l=j
+    if (k != 0):
+        return not (currentState[k][l] == currentState[k - 1][l]);
+    return True;
+
+
+def compareDown(currentState, k, l):  # k=i,l=j # returns True if not equal or ok..else false(equal)
+    if (k != len(currentState) - 1):
+        return not (currentState[k][l] == currentState[k + 1][l]);
+    return True;
+
+
+def GoalTest(currentState):
+    goal = True;
+    for i in range(0, len(currentState)):
+        for j in range(0, len(currentState)):
+
+            goal = compareLeft(currentState, i, j);
+            if (goal == False):
                 return goal;
 
+            goal = compareRight(currentState, i, j);
+            if (goal == False):
+                return goal;
+
+            goal = compareUp(currentState, i, j);
+            if (goal == False):
+                return goal;
+
+            goal = compareDown(currentState, i, j);
+            if (goal == False):
+                return goal;
     return goal;
 
 
-def puzzleBFS(puzzleNode):
-    print('In PuzzleBFS....');
+def coloringBFS(puzzleNode):
+    print('In ColoringBFS....');
     node = puzzleNode;
     node.path_cost = 0;
 
@@ -81,7 +107,7 @@ def puzzleBFS(puzzleNode):
         print('**********Goal Found.**********');
         return node;
 
-    frontier = queue.Queue();
+    frontier = queue.LifoQueue();
     frontier.put(node);
     # explored = set();
 
@@ -95,20 +121,13 @@ def puzzleBFS(puzzleNode):
 
     while (True):
 
-        listObj = [];
-        # for obj in frontier.queue:
-        #     listObj.append(obj.getState());
-        #
-        # print('first listObj:', listObj);
-
         failure = None;
         if (frontier.empty()):
             print('Goal Not Found..');
             return failure;
 
-        # node = frontier.get(frontier);
+        print('--->frontier:', frontier.qsize());
         node = frontier.get();
-        # print('size:', frontier.qsize());
         print('----------------current Node----------------');
         print(node.getState());
 
@@ -117,34 +136,36 @@ def puzzleBFS(puzzleNode):
         if (node.getState() in explored):
             continue;
 
-        # explored.update(node.getState());
         if (node.getState() not in explored):
             explored.append(node.getState());
 
         print('explored:', explored);
+        print('-->explored:', len(explored));
+        colorI, colorJ = getIndexOfSameColor(node.getState());
 
-        blankIndexI, blankIndexJ = getBlankIndex(node.getState());
+        # print('colorI:', colorI, ' colorJ:', colorJ);
 
-        # print('blankIndex I:', blankIndexI, ' blankIndex J:', blankIndexJ);
-
-        moveRight(node, blankIndexI, blankIndexJ);
-        moveLeft(node, blankIndexI, blankIndexJ);
-        moveUp(node, blankIndexI, blankIndexJ);
-        moveDown(node, blankIndexI, blankIndexJ);
+        colorOne(node, colorI, colorJ);
+        colorTwo(node, colorI, colorJ);
+        colorThree(node, colorI, colorJ);
+        colorFour(node, colorI, colorJ);
 
         # print('child Size:', len(children));
-
-        print('----------------children----------------');
-        for ele in children:
-            print('-->', ele.getState(), '-->', ele.getParent().getState());
-        # time.sleep(1);
-        print('------------------');
+        #
+        # print('----------------children----------------');
+        # for ele in children:
+        #     print('-->', ele.getState(), '-->', ele.getParent().getState());
+        # # time.sleep(1);
+        # print('------------------');
 
         listObj = [];
         for obj in frontier.queue:
             listObj.append(obj.getState());
 
-        print('listObj:', listObj);
+        # print('listObj:', listObj);
+
+        print();
+        print();
 
         for ele in children:
             # print('parent:', ele.getParent());
@@ -160,96 +181,83 @@ def puzzleBFS(puzzleNode):
         children.clear();
 
 
-def moveUp(currentNode, blankIndexI, blankIndexJ):
+def colorOne(currentNode, colorI, colorJ):
     tempNode = PuzzleNode();
     tempNode = copy.deepcopy(currentNode);
 
-    if (blankIndexI != 0):
-        temp = tempNode.getState()[blankIndexI][blankIndexJ];
-        tempNode.getState()[blankIndexI][blankIndexJ] = tempNode.getState()[blankIndexI - 1][blankIndexJ];
-        tempNode.getState()[blankIndexI - 1][blankIndexJ] = temp;
+    if (tempNode.getState()[colorI][colorJ] != 1):
+        tempNode.getState()[colorI][colorJ] = 1;
 
-        # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
-        # children.put(tempNode);
         children.append(tempNode);
 
 
-def moveDown(currentNode, blankIndexI, blankIndexJ):
+def colorTwo(currentNode, colorI, colorJ):
     tempNode = PuzzleNode();
     tempNode = copy.deepcopy(currentNode);
 
-    if (blankIndexI != len(currentNode.getState()) - 1):
-        temp = tempNode.getState()[blankIndexI][blankIndexJ];
-        tempNode.getState()[blankIndexI][blankIndexJ] = tempNode.getState()[blankIndexI + 1][blankIndexJ];
-        tempNode.getState()[blankIndexI + 1][blankIndexJ] = temp;
+    if (tempNode.getState()[colorI][colorJ] != 2):
+        tempNode.getState()[colorI][colorJ] = 2;
 
-        # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
-        # children.put(tempNode);
         children.append(tempNode);
 
 
-def moveLeft(currentNode, blankIndexI, blankIndexJ):
+def colorThree(currentNode, colorI, colorJ):
     tempNode = PuzzleNode();
     tempNode = copy.deepcopy(currentNode);
 
-    if (blankIndexJ != 0):
-        temp = tempNode.getState()[blankIndexI][blankIndexJ];
-        tempNode.getState()[blankIndexI][blankIndexJ] = tempNode.getState()[blankIndexI][blankIndexJ - 1];
-        tempNode.getState()[blankIndexI][blankIndexJ - 1] = temp;
+    if (tempNode.getState()[colorI][colorJ] != 3):
+        tempNode.getState()[colorI][colorJ] = 3;
 
-        # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
-        # children.put(tempNode);
         children.append(tempNode);
 
 
-def moveRight(currentNode, blankIndexI, blankIndexJ):
+def colorFour(currentNode, colorI, colorJ):
     tempNode = PuzzleNode();
     tempNode = copy.deepcopy(currentNode);
 
-    if (blankIndexJ != len(currentNode.getState()) - 1):
-        temp = tempNode.getState()[blankIndexI][blankIndexJ];
-        tempNode.getState()[blankIndexI][blankIndexJ] = tempNode.getState()[blankIndexI][blankIndexJ + 1];
-        tempNode.getState()[blankIndexI][blankIndexJ + 1] = temp;
+    if (tempNode.getState()[colorI][colorJ] != 4):
+        tempNode.getState()[colorI][colorJ] = 4;
 
-        # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
-
-        # children.put(tempNode);
         children.append(tempNode);
 
 
-def getBlankIndex(currentState):
-    i, j = -1, -1;
+def getIndexOfSameColor(currentState):
+    # print('--------------getIndexOfSameColor--------------')
+    i, j = None, None;
 
     for i in range(0, len(currentState)):
         for j in range(0, len(currentState)):
-            if (currentState[i][j] == 0):
+            if (not compareDown(currentState, i, j) or not compareUp(currentState, i, j) or not compareRight(
+                    currentState, i,
+                    j) or not compareLeft(
+                currentState, i, j)):
                 return i, j;
     return i, j;
 
 
+start_time = time.time();
+print('start_time:', start_time);
+
 n = int(input('enter n:'));
 
-# a=[[0 for i in range(n)] for j in range(n)];
+a = [[0] * n for i in range(n)];
 
-# a = [[0] * n for i in range(n)];
-# count = 0;
-#
-# for i in range(0, n):
-#     for j in range(0, n):
-#         a[i][j] = count;
-#         count = count + 1;
+for i in range(0, n):
+    for j in range(0, n):
+        a[i][j] = random.randint(1, 4);
 
-# a = [[1, 2, 3], [4, 5, 6], [0, 7, 8]];
+# a = [[2, 1], [4, 4]];
 
-# a = [[0, 1], [2, 3]];
-
-a = [[2, 0, 3, 4], [1, 5, 6, 7], [9, 11, 12, 8], [13, 10, 14, 15]];
-
-print(a);
+# a = [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]];
+a = [[1, 1, 1], [1, 1, 1], [1, 1, 1]];
+# a = [[1, 2, 3, 4], [1, 1, 1, 1], [1, 2, 3, 4], [1, 1, 1, 1]];
+# a = [[1, 1], [1, 1]];
+# a = [[1, 2, 3], [2, 3, 1], [3, 1, 2]];
+# a = [[1, 2, 3], [2, 3, 1], [1, 1, 1]];
 
 for i in range(0, n):
     print(a[i]);
@@ -260,21 +268,22 @@ print('Initial state:');
 for i in range(0, n):
     print(puzzleNode.getState()[i]);
 
-# children = queue.Queue();
-
 children = [];
 
-result = puzzleBFS(puzzleNode);
+result = coloringBFS(puzzleNode);
 
 if (result != None):
     output = [];
     while (result != None):
         output.append(result.getState());
         result = result.getParent();
-
     output.reverse();
-
     for i in output:
         for j in range(0, len(i)):
             print(i[j]);
         print('---')
+
+print('end time:', time.time());
+print(time.time() - start_time);
+elapsed_time_secs = time.time() - start_time;
+print('%s sec' % datetime.timedelta(seconds=round(elapsed_time_secs)));

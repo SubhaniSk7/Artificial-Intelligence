@@ -79,7 +79,7 @@ def puzzleDFS(puzzleNode):
 
     if (GoalTest(node.getState())):
         print('**********Goal Found.**********');
-        return node.getState();
+        return node;
 
     frontier = queue.LifoQueue();
     frontier.put(node);

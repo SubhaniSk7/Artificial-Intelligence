@@ -100,7 +100,7 @@ def puzzleAStar(puzzleNode):
 
     if (GoalTest(node.getState())):
         print('**********Goal Found.**********');
-        return node.getState();
+        return node;
 
     # frontier = queue.PriorityQueue();
     # frontier = queue.Queue();
