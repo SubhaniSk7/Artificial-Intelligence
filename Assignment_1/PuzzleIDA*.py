@@ -3,6 +3,7 @@ import heapq
 import math
 import operator
 import queue;
+import sys
 import time
 
 # -------------------------------------------------
@@ -93,11 +94,19 @@ def GoalTest(currentState):
     return isGoal;
 
 
-def puzzleIDAStar(puzzleNode, limit):
+def puzzleIDAStar(puzzleNode, limit,maxBound):
     print('In PuzzleA*....');
+    failure = None;
     node = puzzleNode;
+    # node.path_cost = 0;
+    global bound;
+    bound += node.getTotalCost() + limit;
+    print('\n\nInitial bound:', bound);
 
-    bound = node.getPathCost() + node.getHeuristicCost();
+    if (bound >= maxBound):
+        print('MaxBound exceeded..')
+        print('Goal Not Found.');
+        return None;
 
     if (GoalTest(node.getState())):
         print('**********Goal Found.**********');
@@ -133,25 +142,15 @@ def puzzleIDAStar(puzzleNode, limit):
         #
         # print('first listObj:', listObj);
 
-        failure = None;
-        if (not frontier):
-            print('Goal Not Found..');
-            return failure;
+        # if (not frontier):
+        #     print('bound:', bound);
+        #     print('frontier size:',len(frontier));
+        #     print('explored size:',len(explored));
+        #     print('Goal Not Found..');
+        #     return failure;
 
         node = frontier[0];
         del frontier[0];
-
-        if (node.getTotalCost() > bound):
-            bound += limit;
-            frontier.clear();
-            explored.clear();
-            time.sleep(1);
-            print('in bound:')
-            print('frontier:', frontier);
-            print('explored:', explored);
-            return puzzleIDAStar(puzzleNode, limit);
-            pass
-
         print('----------------current Node----------------');
         print(node.getState(), '--path_cost:', node.getPathCost(), ',heuristic:', node.getHeuristicCost(), ',total:',
               node.getTotalCost());
@@ -159,50 +158,69 @@ def puzzleIDAStar(puzzleNode, limit):
         # time.sleep(1);
 
         if (node.getState() in explored):
-            continue;
+            # continue;
+            pass
 
-        # explored.update(node.getState());
-        if (node.getState() not in explored):
+        # if (node.getState() not in explored):
+        else:
             explored.append(node.getState());
 
-        print('explored:', explored);
+            print('frontier len:', len(frontier));
+            print('explored len:', len(explored));
+            print('explored:', explored);
 
-        blankIndexI, blankIndexJ = getBlankIndex(node.getState());
+            blankIndexI, blankIndexJ = getBlankIndex(node.getState());
 
-        # print('blankIndex I:', blankIndexI, ' blankIndex J:', blankIndexJ);
+            # print('blankIndex I:', blankIndexI, ' blankIndex J:', blankIndexJ);
 
-        moveLeft(node, blankIndexI, blankIndexJ);
-        moveUp(node, blankIndexI, blankIndexJ);
-        moveRight(node, blankIndexI, blankIndexJ);
-        moveDown(node, blankIndexI, blankIndexJ);
+            moveLeft(node, blankIndexI, blankIndexJ);
+            moveUp(node, blankIndexI, blankIndexJ);
+            moveRight(node, blankIndexI, blankIndexJ);
+            moveDown(node, blankIndexI, blankIndexJ);
 
-        # print('child Size:', len(children));
+            # print('child Size:', len(children));
 
-        print('----------------children----------------');
-        for ele in children:
-            print('-->', ele.getState(), '-->', ele.getParent().getState());
-            print('--path_cost:', ele.getPathCost(), ',heuristic:', ele.getHeuristicCost(), ',total:',
-                  ele.getTotalCost());
-        # time.sleep(1);
-        print('------------------');
+            print('----------------children----------------');
+            for ele in children:
+                print('-->', ele.getState(), '-->', ele.getParent().getState());
+                print('--path_cost:', ele.getPathCost(), ',heuristic:', ele.getHeuristicCost(), ',total:',
+                      ele.getTotalCost());
+            # time.sleep(1);
+            print('------------------');
 
-        # listObj = [];
-        # for obj in frontier:
-        #     listObj.append(obj.getState());
-        #
-        # print('after listObj:', listObj);
+            # listObj = [];
+            # for obj in frontier:
+            #     listObj.append(obj.getState());
+            #
+            # print('after listObj:', listObj);
 
-        for ele in children:
-            if ((ele.getState() not in listObj) or (ele.getState() not in explored)):
-                if (GoalTest(ele.getState())):
-                    print('**********Goal Found.**********');
-                    print(ele.getState());
-                    # return ele.getState();
-                    return ele;
-                # frontier.put(ele.getTotalCost(), ele);
-                frontier.append(ele);
+            for ele in children:
 
-        children.clear();
+                if (ele.getTotalCost() > bound):
+                    print('>>>>>>>>>>>', ele.getState(), '-->', ele.getTotalCost());
+                    continue;
+
+                if ((ele.getState() not in listObj) or (ele.getState() not in explored)):
+                    if (GoalTest(ele.getState())):
+                        print('**********Goal Found.**********');
+                        print(ele.getState());
+                        # return ele.getState();
+                        return ele;
+                    # frontier.put(ele.getTotalCost(), ele);
+                    frontier.append(ele);
+                    print('in<<<<<<<<<<,', ele.getState());
+
+            children.clear();
+
+        print('at last frontier:');
+        for obj in frontier:
+            print(obj.getState());
+        print('at last explored:', explored);
+        if (not frontier):
+            frontier.clear();
+            explored.clear();
+            print('\n\n--------------empty again recursion\n');
+            return puzzleIDAStar(puzzleNode, limit,maxBound);
 
 
 def moveUp(currentNode, blankIndexI, blankIndexJ):
@@ -330,8 +348,11 @@ def heuristic(currentState):
 
 
 n = int(input('enter n:'));
+
 limit = int(input('enter limit:'));
-limit = 50;
+
+maxBound=int(input('enter maxBound:'));
+# limit=1;
 
 # a=[[0 for i in range(n)] for j in range(n)];
 
@@ -345,9 +366,9 @@ limit = 50;
 
 # a = [[1, 2, 3], [4, 5, 6], [0, 7, 8]];
 
-# a = [[0, 1], [2, 3]];
+a = [[0, 1], [2, 3]];
 
-a = [[2, 0, 3, 4], [1, 5, 6, 7], [9, 11, 12, 8], [13, 10, 14, 15]];
+# a = [[2, 0, 3, 4], [1, 5, 6, 7], [9, 11, 12, 8], [13, 10, 14, 15]];
 
 # a = [[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11], [12, 13, 14, 15]];
 
@@ -380,8 +401,10 @@ for i in range(0, n):
 # children = queue.Queue();
 #
 children = [];
+bound = 0;
+# maxBound=100;
 
-result = puzzleIDAStar(puzzleNode, limit);
+result = puzzleIDAStar(puzzleNode, limit,maxBound);
 
 if (result != None):
     output = [];

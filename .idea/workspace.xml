@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d5f2eb3f-9504-479f-b09a-752c584b3714" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Assignment_1/NewColoringBFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/NewColoringBFS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_1/SampleIDA*.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/SampleIDA*.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_1/NewColoringDFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/NewColoringDFS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,27 +32,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="42" />
+          <entry key="py" value="48" />
           <entry key="pyi" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="42" />
+          <entry key="Python" value="48" />
           <entry key="PythonStub" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="66" />
-          <entry key="py" value="15726" />
+          <entry key="dummy" value="69" />
+          <entry key="py" value="16210" />
           <entry key="pyi" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="66" />
-          <entry key="Python" value="15726" />
+          <entry key="PLAIN_TEXT" value="69" />
+          <entry key="Python" value="16210" />
           <entry key="PythonStub" value="2" />
         </counts>
       </usages-collector>
@@ -59,38 +60,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleA*.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="142" column="36" lean-forward="true" selection-start-line="142" selection-start-column="36" selection-end-line="142" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assignment_1/SampleIDA*.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="406" column="36" selection-end-line="421" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assignment_1/stableIDA*.py">
+        <entry file="file://$PROJECT_DIR$/Assignment_1/NewColoringBFS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="421" lean-forward="true" selection-start-line="421" selection-end-line="421" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="193">
+              <caret line="353" column="21" lean-forward="true" selection-start-line="353" selection-start-column="21" selection-end-line="353" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment_1/NewColoringDFS.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="349" column="47" selection-start-line="349" selection-start-column="47" selection-end-line="349" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -134,8 +117,8 @@
       <find>sameI</find>
       <find>queue.Q</find>
       <find>colorI,</find>
-      <find>queue.</find>
       <find>startIndex</find>
+      <find>queue.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -153,15 +136,17 @@
         <option value="$PROJECT_DIR$/DataStructures/random.py" />
         <option value="$PROJECT_DIR$/DataStructures/rand.py" />
         <option value="$PROJECT_DIR$/Assignment_1/PuzzleA*.py" />
-        <option value="$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py" />
         <option value="$PROJECT_DIR$/Assignment_1/ColoringBFS.py" />
         <option value="$PROJECT_DIR$/Assignment_1/ColoringDFS.py" />
         <option value="$PROJECT_DIR$/Assignment_1/puzzleBFS.py" />
         <option value="$PROJECT_DIR$/Assignment_1/PuzzleDFS.py" />
-        <option value="$PROJECT_DIR$/Assignment_1/NewColoringDFS.py" />
-        <option value="$PROJECT_DIR$/Assignment_1/NewColoringBFS.py" />
         <option value="$PROJECT_DIR$/Assignment_1/SampleIDA*.py" />
         <option value="$PROJECT_DIR$/Assignment_1/stableIDA*.py" />
+        <option value="$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py" />
+        <option value="$PROJECT_DIR$/Assignment_1/stableColoringBFS.py" />
+        <option value="$PROJECT_DIR$/Assignment_1/WilliamColoring.py" />
+        <option value="$PROJECT_DIR$/Assignment_1/NewColoringDFS.py" />
+        <option value="$PROJECT_DIR$/Assignment_1/NewColoringBFS.py" />
       </list>
     </option>
   </component>
@@ -231,28 +216,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SampleIDA*">
-    <configuration name="ColoringBFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ArtificialIntelligence" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_1/ColoringBFS.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.NewColoringBFS">
     <configuration name="ColoringDFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ArtificialIntelligence" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -337,20 +301,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="WilliamColoring" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ArtificialIntelligence" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_1/WilliamColoring.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.ColoringBFS" />
       <item itemvalue="Python.ColoringDFS" />
       <item itemvalue="Python.NewColoringBFS" />
       <item itemvalue="Python.NewColoringDFS" />
       <item itemvalue="Python.SampleIDA*" />
+      <item itemvalue="Python.WilliamColoring" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.SampleIDA*" />
         <item itemvalue="Python.NewColoringBFS" />
         <item itemvalue="Python.NewColoringDFS" />
+        <item itemvalue="Python.WilliamColoring" />
+        <item itemvalue="Python.SampleIDA*" />
         <item itemvalue="Python.ColoringDFS" />
-        <item itemvalue="Python.ColoringBFS" />
       </list>
     </recent_temporary>
   </component>
@@ -371,7 +356,28 @@
     <frame x="0" y="25" width="1366" height="698" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.08560606" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07954545" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32922536" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32922536" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32922536" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="right" id="R Packages" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="4" weight="0.32954547" />
+      <window_info active="true" anchor="right" id="Run" order="5" visible="true" weight="0.43939394" />
+      <window_info anchor="right" id="Python Console" order="6" weight="0.3287879" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.05757576" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
@@ -389,27 +395,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32954547" />
       <window_info active="true" anchor="right" id="Run" order="5" visible="true" weight="0.45833334" />
-      <window_info anchor="right" id="Python Console" order="6" weight="0.3287879" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08560606" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32922536" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32922536" />
-      <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.32922536" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="right" id="R Packages" order="0" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="4" weight="0.32954547" />
-      <window_info anchor="right" id="Run" order="5" visible="true" weight="0.40757576" />
       <window_info anchor="right" id="Python Console" order="6" weight="0.3287879" />
     </layout-to-restore>
   </component>
@@ -480,13 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="147" column="25" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleDFS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -509,41 +487,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1/ColoringBFS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="183" column="37" selection-start-line="183" selection-start-column="37" selection-end-line="183" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1/NewColoringBFS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="326" lean-forward="true" selection-start-line="326" selection-end-line="326" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1/NewColoringDFS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="161" column="17" lean-forward="true" selection-start-line="161" selection-start-column="17" selection-end-line="161" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleA*.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="142" column="36" lean-forward="true" selection-start-line="142" selection-start-column="36" selection-end-line="142" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1/SampleIDA*.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="406" column="36" selection-end-line="421" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -557,6 +504,64 @@
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="405" lean-forward="true" selection-start-line="405" selection-end-line="405" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1/SampleIDA*.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="403" column="10" lean-forward="true" selection-end-line="421" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1/stableNewColoringBFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="349" column="13" selection-start-line="349" selection-start-column="13" selection-end-line="349" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1/ColoringBFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1/WilliamColoring.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="141" column="34" lean-forward="true" selection-start-line="141" selection-start-column="34" selection-end-line="141" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1/NewColoringDFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="349" column="47" selection-start-line="349" selection-start-column="47" selection-end-line="349" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1/NewColoringBFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="353" column="21" lean-forward="true" selection-start-line="353" selection-start-column="21" selection-end-line="353" selection-end-column="21" />
         </state>
       </provider>
     </entry>

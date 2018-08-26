@@ -168,14 +168,32 @@ def coloringBFS(puzzleNode):
         print('explored:', explored);
         print('-->explored:', len(explored));
 
-        colorI, colorJ = getIndexOfSameColor(node.getState());
-        print('colorI:', colorI, ' colorJ:', colorJ);
+        # colorI, colorJ = getIndexOfSameColor(node.getState());
 
-        if (colorI != None and colorJ != None):
-            swapRight(node, colorI, colorJ);
-            swapDown(node, colorI, colorJ);
-            swapLeft(node, colorI, colorJ);
-            swapUp(node, colorI, colorJ);
+        collisionIndices = [];
+        collisionIndices = getIndexOfCollisions(node.getState());
+        # print('colorI:', colorI, ' colorJ:', colorJ);
+
+        # if (colorI != None and colorJ != None):
+        #     swapRight(node, colorI, colorJ);
+        #     swapDown(node, colorI, colorJ);
+        #     swapLeft(node, colorI, colorJ);
+        #     swapUp(node, colorI, colorJ);
+
+        if (len(collisionIndices) == 0):
+            print('no collisions:');
+            return node;
+
+        # time.sleep(1);
+        if (len(collisionIndices) != 0):
+            for collisionIndex in collisionIndices:
+                print(collisionIndex);
+
+            for collisionIndex in collisionIndices:
+                swapRight(node, collisionIndex[0], collisionIndex[1]);
+                swapDown(node, collisionIndex[0], collisionIndex[1]);
+                swapLeft(node, collisionIndex[0], collisionIndex[1]);
+                swapUp(node, collisionIndex[0], collisionIndex[1]);
 
         print('child Size:', len(children));
 
@@ -273,28 +291,42 @@ def swapUp(currentNode, colorI, colorJ):
         children.append(tempNode);
 
 
-def getIndexOfSameColor(currentState):
-    # print('--------------getIndexOfSameColor--------------')
-    k, l = None, None;
+# def getIndexOfSameColor(currentState):
+#     # print('--------------getIndexOfSameColor--------------')
+#     k, l = None, None;
+#     indexI, indexJ = None, None;
+#     for i in range(0, len(currentState)):
+#         for j in range(0, len(currentState)):
+#
+#             if (not compareDown(currentState, i, j) or not compareUp(currentState, i, j) or not compareRight(
+#                     currentState, i,
+#                     j) or not compareLeft(
+#                 currentState, i, j)):
+#                 indexI, indexJ = i, j;
+#                 return indexI, indexJ;
+#                 # return i, j;
+#     return k, l;
+
+
+def getIndexOfCollisions(currentState):
+    # print('--------------getIndexOfCollisions--------------')
     indexI, indexJ = None, None;
+    collisionIndices = [];
+
     for i in range(0, len(currentState)):
         for j in range(0, len(currentState)):
-
-            # if (not compareRight(currentState, i, j) and not compareDown(currentState, i, j)):
-            #     indexI = i;
-            #     indexJ = j;
-            #
-            #     print('in continue:')
-            #     continue;
 
             if (not compareDown(currentState, i, j) or not compareUp(currentState, i, j) or not compareRight(
                     currentState, i,
                     j) or not compareLeft(
                 currentState, i, j)):
                 indexI, indexJ = i, j;
-                return indexI, indexJ;
+
+                collisionIndices.append([indexI, indexJ]);
+
+                # return indexI, indexJ;
                 # return i, j;
-    return k, l;
+    return collisionIndices;
 
 
 start_time = time.time();
@@ -317,8 +349,13 @@ for i in range(0, n):
 # a = [[1, 2, 3], [2, 3, 1], [3, 1, 2]]; # goal found
 # a = [[1, 2, 3], [2, 3, 1], [1, 1, 1]]; # goal found
 # a = [[1, 2], [3, 4]];# goal found
-# a = [[1, 1], [2, 3]];  # goal found
-a = [[1, 1, 2], [1, 1, 2], [1, 2, 2]];
+# a = [[1, 1], [1, 3]];  # goal not found
+
+a = [[1, 1], [2, 3]];
+# a = [[1, 1, 2], [1, 1, 2], [1, 2, 2]]; # goal found
+
+# a = [[1, 1, 2, 2], [1, 1, 2, 2], [3, 3, 4, 4], [3, 3, 4, 4]];  # goal found
+
 
 for i in range(0, n):
     print(a[i]);
@@ -328,24 +365,6 @@ puzzleNode = PuzzleNode(a);
 print('Initial state:');
 for i in range(0, n):
     print(puzzleNode.getState()[i]);
-
-frequency = [0, 0, 0, 0];
-
-# for i in range(0, n):
-#     for j in range(0, n):
-#         if (a[i][j] == 1):
-#             frequency[0] += 1;
-#             pass
-#         elif (a[i][j] == 2):
-#             frequency[1] += 1;
-#             pass
-#         elif (a[i][j] == 3):
-#             frequency[2] += 1;
-#             pass
-#         elif (a[i][j] == 4):
-#             frequency[3] += 1;
-#
-# print('Initial Frequency:', frequency);
 
 children = [];
 
