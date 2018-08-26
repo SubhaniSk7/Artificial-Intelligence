@@ -123,7 +123,7 @@ def GoalTest(currentState):
 #     return freqCheck;
 
 
-def coloringBFS(puzzleNode, frequency):
+def coloringBFS(puzzleNode):
     print('In ColoringBFS....');
     node = puzzleNode;
     node.path_cost = 0;
@@ -167,15 +167,15 @@ def coloringBFS(puzzleNode, frequency):
 
         print('explored:', explored);
         print('-->explored:', len(explored));
-        colorI, colorJ = getIndexOfSameColor(node.getState());
 
+        colorI, colorJ = getIndexOfSameColor(node.getState());
         print('colorI:', colorI, ' colorJ:', colorJ);
 
         if (colorI != None and colorJ != None):
-            swapLeft(node, colorI, colorJ);
             swapRight(node, colorI, colorJ);
-            swapUp(node, colorI, colorJ);
             swapDown(node, colorI, colorJ);
+            swapLeft(node, colorI, colorJ);
+            swapUp(node, colorI, colorJ);
 
         print('child Size:', len(children));
 
@@ -209,49 +209,6 @@ def coloringBFS(puzzleNode, frequency):
         children.clear();
         print('\n');
 
-
-# def colorOne(currentNode, colorI, colorJ):
-#     tempNode = PuzzleNode();
-#     tempNode = copy.deepcopy(currentNode);
-#
-#     if (tempNode.getState()[colorI][colorJ] != 1):
-#         tempNode.getState()[colorI][colorJ] = 1;
-#
-#         tempNode.setParent(currentNode);
-#         children.append(tempNode);
-#
-#
-# def colorTwo(currentNode, colorI, colorJ):
-#     tempNode = PuzzleNode();
-#     tempNode = copy.deepcopy(currentNode);
-#
-#     if (tempNode.getState()[colorI][colorJ] != 2):
-#         tempNode.getState()[colorI][colorJ] = 2;
-#
-#         tempNode.setParent(currentNode);
-#         children.append(tempNode);
-#
-#
-# def colorThree(currentNode, colorI, colorJ):
-#     tempNode = PuzzleNode();
-#     tempNode = copy.deepcopy(currentNode);
-#
-#     if (tempNode.getState()[colorI][colorJ] != 3):
-#         tempNode.getState()[colorI][colorJ] = 3;
-#
-#         tempNode.setParent(currentNode);
-#         children.append(tempNode);
-#
-#
-# def colorFour(currentNode, colorI, colorJ):
-#     tempNode = PuzzleNode();
-#     tempNode = copy.deepcopy(currentNode);
-#
-#     if (tempNode.getState()[colorI][colorJ] != 4):
-#         tempNode.getState()[colorI][colorJ] = 4;
-#
-#         tempNode.setParent(currentNode);
-#         children.append(tempNode);
 
 def swapLeft(currentNode, colorI, colorJ):
     tempNode = PuzzleNode();
@@ -319,14 +276,24 @@ def swapUp(currentNode, colorI, colorJ):
 def getIndexOfSameColor(currentState):
     # print('--------------getIndexOfSameColor--------------')
     k, l = None, None;
-
+    indexI, indexJ = None, None;
     for i in range(0, len(currentState)):
         for j in range(0, len(currentState)):
+
+            # if (not compareRight(currentState, i, j) and not compareDown(currentState, i, j)):
+            #     indexI = i;
+            #     indexJ = j;
+            #
+            #     print('in continue:')
+            #     continue;
+
             if (not compareDown(currentState, i, j) or not compareUp(currentState, i, j) or not compareRight(
                     currentState, i,
                     j) or not compareLeft(
                 currentState, i, j)):
-                return i, j;
+                indexI, indexJ = i, j;
+                return indexI, indexJ;
+                # return i, j;
     return k, l;
 
 
@@ -350,7 +317,8 @@ for i in range(0, n):
 # a = [[1, 2, 3], [2, 3, 1], [3, 1, 2]]; # goal found
 # a = [[1, 2, 3], [2, 3, 1], [1, 1, 1]]; # goal found
 # a = [[1, 2], [3, 4]];# goal found
-a = [[1, 1], [2, 3]]; # goal found
+# a = [[1, 1], [2, 3]];  # goal found
+a = [[1, 1, 2], [1, 1, 2], [1, 2, 2]];
 
 for i in range(0, n):
     print(a[i]);
@@ -363,24 +331,25 @@ for i in range(0, n):
 
 frequency = [0, 0, 0, 0];
 
-for i in range(0, n):
-    for j in range(0, n):
-        if (a[i][j] == 1):
-            frequency[0] += 1;
-            pass
-        elif (a[i][j] == 2):
-            frequency[1] += 1;
-            pass
-        elif (a[i][j] == 3):
-            frequency[2] += 1;
-            pass
-        elif (a[i][j] == 4):
-            frequency[3] += 1;
+# for i in range(0, n):
+#     for j in range(0, n):
+#         if (a[i][j] == 1):
+#             frequency[0] += 1;
+#             pass
+#         elif (a[i][j] == 2):
+#             frequency[1] += 1;
+#             pass
+#         elif (a[i][j] == 3):
+#             frequency[2] += 1;
+#             pass
+#         elif (a[i][j] == 4):
+#             frequency[3] += 1;
+#
+# print('Initial Frequency:', frequency);
 
-print('Initial Frequency:', frequency);
 children = [];
 
-result = coloringBFS(puzzleNode, frequency);
+result = coloringBFS(puzzleNode);
 
 if (result != None):
     output = [];
