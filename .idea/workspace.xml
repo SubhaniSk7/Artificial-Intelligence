@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5f2eb3f-9504-479f-b09a-752c584b3714" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assignment_1/ColoringBFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/ColoringBFS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_1/ColoringDFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/ColoringDFS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_1/SampleIDA*.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/SampleIDA*.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_1/PuzzleDFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/PuzzleDFS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_1/puzzleBFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/puzzleBFS.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,40 +16,43 @@
     <session id="-707460421">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.30" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="31" />
+          <entry key="py" value="39" />
           <entry key="pyi" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="31" />
+          <entry key="Python" value="39" />
           <entry key="PythonStub" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="66" />
-          <entry key="py" value="13628" />
+          <entry key="py" value="13950" />
           <entry key="pyi" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="66" />
-          <entry key="Python" value="13628" />
+          <entry key="Python" value="13950" />
           <entry key="PythonStub" value="2" />
         </counts>
       </usages-collector>
@@ -58,25 +61,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py">
+        <entry file="file://$PROJECT_DIR$/Assignment_1/ColoringBFS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="144" column="27" lean-forward="true" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
+            <state relative-caret-position="106">
+              <caret line="172" column="24" selection-start-line="172" selection-start-column="24" selection-end-line="172" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment_1/puzzleBFS.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="224" column="34" selection-start-line="224" selection-start-column="34" selection-end-line="224" selection-end-column="34" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+                <marker date="1535218863376" expanded="true" signature="771:808" ph="..." />
+                <marker date="1535218863376" expanded="true" signature="6701:6900" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assignment_1/SampleIDA*.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment_1/NewColoringBFS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="193" lean-forward="true" selection-start-line="193" selection-end-line="193" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="349" column="34" lean-forward="true" selection-start-line="349" selection-start-column="34" selection-end-line="349" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assignment_1/NewColoringDFS.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="137" column="23" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -92,7 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Node</find>
       <find>if goal</find>
       <find>sleep</find>
       <find>children</find>
@@ -122,6 +141,7 @@
       <find>colorOne</find>
       <find>sameI</find>
       <find>queue.Q</find>
+      <find>colorI,</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,13 +158,15 @@
         <option value="$PROJECT_DIR$/DataStructures/AStar.py" />
         <option value="$PROJECT_DIR$/DataStructures/random.py" />
         <option value="$PROJECT_DIR$/DataStructures/rand.py" />
-        <option value="$PROJECT_DIR$/Assignment_1/PuzzleDFS.py" />
-        <option value="$PROJECT_DIR$/Assignment_1/puzzleBFS.py" />
         <option value="$PROJECT_DIR$/Assignment_1/PuzzleA*.py" />
         <option value="$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py" />
         <option value="$PROJECT_DIR$/Assignment_1/ColoringBFS.py" />
         <option value="$PROJECT_DIR$/Assignment_1/ColoringDFS.py" />
         <option value="$PROJECT_DIR$/Assignment_1/SampleIDA*.py" />
+        <option value="$PROJECT_DIR$/Assignment_1/puzzleBFS.py" />
+        <option value="$PROJECT_DIR$/Assignment_1/PuzzleDFS.py" />
+        <option value="$PROJECT_DIR$/Assignment_1/NewColoringBFS.py" />
+        <option value="$PROJECT_DIR$/Assignment_1/NewColoringDFS.py" />
       </list>
     </option>
   </component>
@@ -214,7 +236,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ColoringDFS">
+  <component name="RunManager" selected="Python.NewColoringDFS">
     <configuration name="ColoringBFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ArtificialIntelligence" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -257,7 +279,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PuzzleA*" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="NewColoringBFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ArtificialIntelligence" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -269,7 +291,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_1/PuzzleA*.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_1/NewColoringBFS.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="NewColoringDFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ArtificialIntelligence" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_1/NewColoringDFS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -299,41 +342,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="random" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ArtificialIntelligence" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataStructures" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataStructures/rand.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.PuzzleA*" />
-      <item itemvalue="Python.random" />
       <item itemvalue="Python.ColoringBFS" />
       <item itemvalue="Python.ColoringDFS" />
       <item itemvalue="Python.PuzzleIDA*" />
+      <item itemvalue="Python.NewColoringBFS" />
+      <item itemvalue="Python.NewColoringDFS" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.NewColoringDFS" />
+        <item itemvalue="Python.NewColoringBFS" />
         <item itemvalue="Python.ColoringDFS" />
         <item itemvalue="Python.ColoringBFS" />
         <item itemvalue="Python.PuzzleIDA*" />
-        <item itemvalue="Python.random" />
-        <item itemvalue="Python.PuzzleA*" />
       </list>
     </recent_temporary>
   </component>
@@ -354,7 +376,7 @@
     <frame x="0" y="25" width="1366" height="698" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09621212" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12651515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
@@ -371,7 +393,7 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32954547" />
-      <window_info anchor="right" id="Run" order="5" weight="0.49015152" />
+      <window_info anchor="right" id="Run" order="5" visible="true" weight="0.29166666" />
       <window_info anchor="right" id="Python Console" order="6" weight="0.3287879" />
     </layout>
   </component>
@@ -428,38 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleDFS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="81" column="20" lean-forward="true" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1/puzzleBFS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1535134560068" expanded="true" signature="771:808" ph="..." />
-            <marker date="1535134560068" expanded="true" signature="6469:6668" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleA*.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataStructures/rand.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -471,6 +461,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="278" lean-forward="true" selection-start-line="278" selection-end-line="278" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1/SampleIDA*.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="186" column="36" lean-forward="true" selection-start-line="186" selection-start-column="36" selection-end-line="186" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="147" column="25" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleDFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="228" selection-start-line="228" selection-end-line="228" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleA*.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="203" column="57" selection-start-line="203" selection-start-column="57" selection-end-line="203" selection-end-column="57" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -479,32 +500,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignment_1/ColoringBFS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="131" column="41" selection-end-line="332" />
+        <state relative-caret-position="106">
+          <caret line="172" column="24" selection-start-line="172" selection-start-column="24" selection-end-line="172" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1/puzzleBFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="224" column="34" selection-start-line="224" selection-start-column="34" selection-end-line="224" selection-end-column="34" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1535190356583" expanded="true" signature="3001:3004" ph="..." />
+            <marker date="1535218863376" expanded="true" signature="771:808" ph="..." />
+            <marker date="1535218863376" expanded="true" signature="6701:6900" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py">
+    <entry file="file://$PROJECT_DIR$/Assignment_1/NewColoringBFS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="144" column="27" lean-forward="true" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="349" column="34" lean-forward="true" selection-start-line="349" selection-start-column="34" selection-end-line="349" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1/SampleIDA*.py">
+    <entry file="file://$PROJECT_DIR$/Assignment_1/NewColoringDFS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="193" lean-forward="true" selection-start-line="193" selection-end-line="193" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="137" column="23" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
         </state>
       </provider>
     </entry>

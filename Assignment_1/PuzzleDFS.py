@@ -169,6 +169,7 @@ def moveUp(currentNode, blankIndexI, blankIndexJ):
         tempNode.getState()[blankIndexI][blankIndexJ] = tempNode.getState()[blankIndexI - 1][blankIndexJ];
         tempNode.getState()[blankIndexI - 1][blankIndexJ] = temp;
 
+        tempNode.setPathCost(tempNode.getPathCost() + 1);
         # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
         # children.put(tempNode);
@@ -183,6 +184,8 @@ def moveDown(currentNode, blankIndexI, blankIndexJ):
         temp = tempNode.getState()[blankIndexI][blankIndexJ];
         tempNode.getState()[blankIndexI][blankIndexJ] = tempNode.getState()[blankIndexI + 1][blankIndexJ];
         tempNode.getState()[blankIndexI + 1][blankIndexJ] = temp;
+
+        tempNode.setPathCost(tempNode.getPathCost() + 1);
 
         # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
@@ -199,6 +202,8 @@ def moveLeft(currentNode, blankIndexI, blankIndexJ):
         tempNode.getState()[blankIndexI][blankIndexJ] = tempNode.getState()[blankIndexI][blankIndexJ - 1];
         tempNode.getState()[blankIndexI][blankIndexJ - 1] = temp;
 
+        tempNode.setPathCost(tempNode.getPathCost() + 1);
+
         # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
         # children.put(tempNode);
@@ -213,6 +218,8 @@ def moveRight(currentNode, blankIndexI, blankIndexJ):
         temp = tempNode.getState()[blankIndexI][blankIndexJ];
         tempNode.getState()[blankIndexI][blankIndexJ] = tempNode.getState()[blankIndexI][blankIndexJ + 1];
         tempNode.getState()[blankIndexI][blankIndexJ + 1] = temp;
+
+        tempNode.setPathCost(tempNode.getPathCost() + 1);
 
         # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
