@@ -1,10 +1,11 @@
 import copy
 import datetime
 import queue;
-
-# -------------------------------------------------
 import random
 import time
+
+
+# -------------------------------------------------
 
 
 class PuzzleNode:
@@ -133,7 +134,7 @@ def coloringBFS(puzzleNode):
         print('first **********Goal Found.**********');
         return node;
 
-    frontier = queue.LifoQueue();
+    frontier = queue.Queue();
     frontier.put(node);
     # explored = set();
 
@@ -186,8 +187,8 @@ def coloringBFS(puzzleNode):
 
         # time.sleep(1);
         if (len(collisionIndices) != 0):
-            for collisionIndex in collisionIndices:
-                print(collisionIndex);
+            # for collisionIndex in collisionIndices:
+            #     print(collisionIndex);
 
             for collisionIndex in collisionIndices:
                 swapRight(node, collisionIndex[0], collisionIndex[1]);
@@ -195,13 +196,12 @@ def coloringBFS(puzzleNode):
                 swapLeft(node, collisionIndex[0], collisionIndex[1]);
                 swapUp(node, collisionIndex[0], collisionIndex[1]);
 
-        print('child Size:', len(children));
-
-        print('----------------children----------------');
-        for ele in children:
-            print('-->', ele.getState(), '-->', ele.getParent().getState());
-        # time.sleep(1);
-        print('------------------');
+        # print('child Size:', len(children));
+        # print('----------------children----------------');
+        # for ele in children:
+        #     print('-->', ele.getState(), '-->', ele.getParent().getState());
+        # # time.sleep(1);
+        # print('------------------');
 
         listObj = [];
         for obj in frontier.queue:
@@ -209,8 +209,7 @@ def coloringBFS(puzzleNode):
 
         # print('listObj:', listObj);
 
-        print();
-        print();
+        print('\n');
 
         for ele in children:
             # print('parent:', ele.getParent());
@@ -218,9 +217,13 @@ def coloringBFS(puzzleNode):
             if ((ele.getState() not in listObj) or (ele.getState() not in explored)):
                 # if (GoalTest(ele.getState()) and frequencyCheck(ele.getState(), frequency)):
                 if (GoalTest(ele.getState())):
-                    print('**********Goal Found.**********');
+                    print('\n**********Goal Found.**********');
                     print(ele.getState());
-                    # return ele.getState();
+
+                    print('frontier nodes:', frontier.qsize());
+                    print('explored nodes:', len(explored));
+                    print('goal node path cost:', ele.getPathCost());
+
                     return ele;
                 frontier.put(ele);
 
@@ -239,7 +242,6 @@ def swapLeft(currentNode, colorI, colorJ):
 
         tempNode.setPathCost(tempNode.getPathCost() + 1);
         tempNode.setParent(currentNode);
-        # children.put(tempNode);
         children.append(tempNode);
 
 
@@ -255,7 +257,6 @@ def swapRight(currentNode, colorI, colorJ):
         tempNode.setPathCost(tempNode.getPathCost() + 1);
         tempNode.setParent(currentNode);
 
-        # children.put(tempNode);
         children.append(tempNode);
 
 
@@ -271,7 +272,6 @@ def swapDown(currentNode, colorI, colorJ):
         tempNode.setPathCost(tempNode.getPathCost() + 1);
 
         tempNode.setParent(currentNode);
-        # children.put(tempNode);
         children.append(tempNode);
 
 
@@ -287,25 +287,7 @@ def swapUp(currentNode, colorI, colorJ):
         tempNode.setPathCost(tempNode.getPathCost() + 1);
 
         tempNode.setParent(currentNode);
-        # children.put(tempNode);
         children.append(tempNode);
-
-
-# def getIndexOfSameColor(currentState):
-#     # print('--------------getIndexOfSameColor--------------')
-#     k, l = None, None;
-#     indexI, indexJ = None, None;
-#     for i in range(0, len(currentState)):
-#         for j in range(0, len(currentState)):
-#
-#             if (not compareDown(currentState, i, j) or not compareUp(currentState, i, j) or not compareRight(
-#                     currentState, i,
-#                     j) or not compareLeft(
-#                 currentState, i, j)):
-#                 indexI, indexJ = i, j;
-#                 return indexI, indexJ;
-#                 # return i, j;
-#     return k, l;
 
 
 def getIndexOfCollisions(currentState):
@@ -349,9 +331,14 @@ for i in range(0, n):
 # a = [[1, 2, 3], [2, 3, 1], [3, 1, 2]]; # goal found
 # a = [[1, 2, 3], [2, 3, 1], [1, 1, 1]]; # goal found
 # a = [[1, 2], [3, 4]];# goal found
-# a = [[1, 1], [1, 3]];  # goal found
-# a = [[1, 1, 2], [1, 1, 2], [1, 2, 2]];
-a = [[1, 1, 2, 2], [1, 1, 2, 2], [3, 3, 4, 4], [3, 3, 4, 4]];
+# a = [[1, 1], [1, 3]];  # goal not found
+
+# a = [[1, 1], [2, 3]];
+# a = [[1, 1, 2], [1, 1, 2], [1, 2, 2]]; # goal found
+
+# a = [[1, 1, 2, 2], [1, 1, 2, 2], [3, 3, 4, 4], [3, 3, 4, 4]];  # goal found
+
+
 for i in range(0, n):
     print(a[i]);
 
@@ -360,8 +347,6 @@ puzzleNode = PuzzleNode(a);
 print('Initial state:');
 for i in range(0, n):
     print(puzzleNode.getState()[i]);
-
-frequency = [0, 0, 0, 0];
 
 children = [];
 

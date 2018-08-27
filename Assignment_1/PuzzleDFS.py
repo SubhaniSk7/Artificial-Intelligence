@@ -1,5 +1,6 @@
 import copy
 import queue;
+import datetime
 
 # -------------------------------------------------
 import time
@@ -73,7 +74,7 @@ def GoalTest(currentState):
 
 
 def puzzleDFS(puzzleNode):
-    print('In PuzzleDFS....');
+    print('In PuzzleBFS....');
     node = puzzleNode;
     node.path_cost = 0;
 
@@ -121,7 +122,9 @@ def puzzleDFS(puzzleNode):
         if (node.getState() not in explored):
             explored.append(node.getState());
 
-        print('explored:', explored);
+        # print('explored:', explored);
+        print('frontier:', frontier.qsize());
+        print('explored:', len(explored));
 
         blankIndexI, blankIndexJ = getBlankIndex(node.getState());
 
@@ -132,32 +135,39 @@ def puzzleDFS(puzzleNode):
         moveUp(node, blankIndexI, blankIndexJ);
         moveDown(node, blankIndexI, blankIndexJ);
 
-        # print('child Size:', len(children));
+        print('#children:', len(children));
 
-        print('----------------children----------------');
-        for ele in children:
-            print('-->', ele.getState(), '-->', ele.getParent().getState());
-        # time.sleep(1);
-        print('------------------');
+        # print('----------------children----------------');
+        # for ele in children:
+        #     print('-->', ele.getState(), '-->', ele.getParent().getState());
+        # # time.sleep(1);
+        # print('------------------');
 
-        listObj = [];
-        for obj in frontier.queue:
-            listObj.append(obj.getState());
-
-        print('listObj:', listObj);
+        # listObj = [];
+        # for obj in frontier.queue:
+        #     listObj.append(obj.getState());
+        #
+        # print('listObj:', listObj);
 
         for ele in children:
             # print('parent:', ele.getParent());
             # time.sleep(1);
             if ((ele.getState() not in listObj) or (ele.getState() not in explored)):
                 if (GoalTest(ele.getState())):
-                    print('**********Goal Found.**********');
+                    print('\n**********Goal Found.**********');
                     print(ele.getState());
                     # return ele.getState();
+
+                    print('frontier nodes:', frontier.qsize());
+                    print('explored nodes:', len(explored));
+                    print('goal node path cost:', ele.getPathCost());
+
                     return ele;
                 frontier.put(ele);
 
         children.clear();
+
+        print('\n');
 
 
 def moveUp(currentNode, blankIndexI, blankIndexJ):
@@ -170,9 +180,7 @@ def moveUp(currentNode, blankIndexI, blankIndexJ):
         tempNode.getState()[blankIndexI - 1][blankIndexJ] = temp;
 
         tempNode.setPathCost(tempNode.getPathCost() + 1);
-        # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
-        # children.put(tempNode);
         children.append(tempNode);
 
 
@@ -186,7 +194,6 @@ def moveDown(currentNode, blankIndexI, blankIndexJ):
         tempNode.getState()[blankIndexI + 1][blankIndexJ] = temp;
 
         tempNode.setPathCost(tempNode.getPathCost() + 1);
-
         # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
         # children.put(tempNode);
@@ -203,7 +210,6 @@ def moveLeft(currentNode, blankIndexI, blankIndexJ):
         tempNode.getState()[blankIndexI][blankIndexJ - 1] = temp;
 
         tempNode.setPathCost(tempNode.getPathCost() + 1);
-
         # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
         # children.put(tempNode);
@@ -220,11 +226,8 @@ def moveRight(currentNode, blankIndexI, blankIndexJ):
         tempNode.getState()[blankIndexI][blankIndexJ + 1] = temp;
 
         tempNode.setPathCost(tempNode.getPathCost() + 1);
-
-        # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
 
-        # children.put(tempNode);
         children.append(tempNode);
 
 
@@ -238,9 +241,12 @@ def getBlankIndex(currentState):
     return i, j;
 
 
+start_time = time.time();
+print('start_time:', start_time);
+
 n = int(input('enter n:'));
 
-# a=[[0 for i in range(n)] for j in range(n)];
+a = [[0 for i in range(n)] for j in range(n)];
 
 # a = [[0] * n for i in range(n)];
 # count = 0;
@@ -250,12 +256,17 @@ n = int(input('enter n:'));
 #         a[i][j] = count;
 #         count = count + 1;
 
-a = [[1, 2, 3], [4, 5, 6], [0, 7, 8]];
+# a = [[1, 2, 3], [4, 5, 6], [0, 7, 8]]; # goal found
 
-# a = [[0, 1], [2, 3]];
+# a = [[0, 1], [2, 3]]; # goal not found
 
-# a = [[2, 0, 3, 4], [1, 5, 6, 7], [9, 11, 12, 8], [13, 10, 14, 15]];
+# a = [[2, 0, 3, 4], [1, 5, 6, 7], [9, 11, 12, 8], [13, 10, 14, 15]]; # goal found
 
+print('enter puzzle elements row wise:');
+for i in range(0, n):
+    for j in range(0, n):
+        print('enter element a[', i, '][', j, ']:', end='');
+        a[i][j] = int(input());
 print(a);
 
 for i in range(0, n):
@@ -284,4 +295,9 @@ if (result != None):
     for i in output:
         for j in range(0, len(i)):
             print(i[j]);
-        print('---')
+        print('---');
+
+print('end time:', time.time());
+print(time.time() - start_time);
+elapsed_time_secs = time.time() - start_time;
+print('%s sec' % datetime.timedelta(seconds=round(elapsed_time_secs)));

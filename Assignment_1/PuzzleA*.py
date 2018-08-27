@@ -4,6 +4,7 @@ import math
 import operator
 import queue;
 import time
+import datetime
 
 # -------------------------------------------------
 import apt_pkg
@@ -182,14 +183,19 @@ def puzzleAStar(puzzleNode):
         for ele in children:
             if ((ele.getState() not in listObj) or (ele.getState() not in explored)):
                 if (GoalTest(ele.getState())):
-                    print('**********Goal Found.**********');
+                    print('\n**********Goal Found.**********');
                     print(ele.getState());
+
+                    print('frontier nodes:', len(frontier));
+                    print('explored nodes:', len(explored));
+                    print('goal node path cost:', ele.getPathCost());
+
                     # return ele.getState();
                     return ele;
-                # frontier.put(ele.getTotalCost(), ele);
                 frontier.append(ele);
 
         children.clear();
+        print('\n');
 
 
 def moveUp(currentNode, blankIndexI, blankIndexJ):
@@ -207,9 +213,8 @@ def moveUp(currentNode, blankIndexI, blankIndexJ):
 
         # print('in Up: path-', tempNode.getPathCost(), ',heuristic:', tempNode.getHeuristicCost(), ',total:',
         #       tempNode.getTotalCost());
-        # tempNode.setParent(currentNode.getState());
+
         tempNode.setParent(currentNode);
-        # children.put(tempNode);
         children.append(tempNode);
 
 
@@ -229,9 +234,7 @@ def moveDown(currentNode, blankIndexI, blankIndexJ):
         # print('in Down: path-', tempNode.getPathCost(), ',heuristic:', tempNode.getHeuristicCost(), ',total:',
         # tempNode.getTotalCost());
 
-        # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
-        # children.put(tempNode);
         children.append(tempNode);
 
 
@@ -251,9 +254,7 @@ def moveLeft(currentNode, blankIndexI, blankIndexJ):
         # print('in Left: path-', tempNode.getPathCost(), ',heuristic:', tempNode.getHeuristicCost(), ',total:',
         #       tempNode.getTotalCost());
 
-        # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
-        # children.put(tempNode);
         children.append(tempNode);
 
 
@@ -273,10 +274,7 @@ def moveRight(currentNode, blankIndexI, blankIndexJ):
         # print('in Right: path-', tempNode.getPathCost(), ',heuristic:', tempNode.getHeuristicCost(), ',total:',
         #       tempNode.getTotalCost());
 
-        # tempNode.setParent(currentNode.getState());
         tempNode.setParent(currentNode);
-
-        # children.put(tempNode);
         children.append(tempNode);
 
 
@@ -292,14 +290,11 @@ def getBlankIndex(currentState):
 
 def getGoalIndex(element):
     i, j = -1, -1;
-
     # print('element:', element)
-
     for i in range(0, len(goalState)):
         for j in range(0, len(goalState)):
             if (goalState[i][j] == element):
                 return i, j;
-            pass
     return i, j;
 
 
@@ -316,27 +311,22 @@ def heuristic(currentState):
     return manhattan;
 
 
+start_time = time.time();
+print('start_time:', start_time);
+
 n = int(input('enter n:'));
-
-# a=[[0 for i in range(n)] for j in range(n)];
-
-# a = [[0] * n for i in range(n)];
-# count = 0;
-#
-# for i in range(0, n):
-#     for j in range(0, n):
-#         a[i][j] = count;
-#         count = count + 1;
-
-# a = [[1, 2, 3], [4, 5, 6], [0, 7, 8]];
-
-# a = [[0, 1], [2, 3]];
-
+a = [[0] * n for i in range(n)];
+# a = [[1, 2, 3], [4, 5, 6], [0, 7, 8]]; # goal found
+# a = [[0, 1], [2, 3]]; # goal not found
 # a = [[2, 0, 3, 4], [1, 5, 6, 7], [9, 11, 12, 8], [13, 10, 14, 15]];
+# a = [[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11], [12, 13, 14, 15]];
 
-a = [[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11], [12, 13, 14, 15]];
+print('enter puzzle elements row wise:');
+for i in range(0, n):
+    for j in range(0, n):
+        print('enter element a[', i, '][', j, ']:', end='');
+        a[i][j] = int(input());
 
-# print(a);
 print('Initial State:');
 for i in range(0, n):
     print(a[i]);
@@ -358,10 +348,6 @@ for i in range(0, n):
 
 puzzleNode = PuzzleNode(a);
 
-print('Initial state:');
-for i in range(0, n):
-    print(puzzleNode.getState()[i]);
-
 # children = queue.Queue();
 #
 children = [];
@@ -380,4 +366,9 @@ if (result != None):
     for i in output:
         for j in range(0, len(i)):
             print(i[j]);
-        print('---')
+        print('---');
+
+print('end time:', time.time());
+print(time.time() - start_time);
+elapsed_time_secs = time.time() - start_time;
+print('%s sec' % datetime.timedelta(seconds=round(elapsed_time_secs)));
