@@ -14,53 +14,61 @@
     <session id="-707460421">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="28" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.104" value="1" />
           <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.17" value="3" />
+          <entry key="project.open.time.18" value="2" />
+          <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.30" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.opened" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="77" />
+          <entry key="py" value="122" />
           <entry key="pyi" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="77" />
+          <entry key="Python" value="122" />
           <entry key="PythonStub" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="77" />
-          <entry key="py" value="16783" />
+          <entry key="Python Console" value="40" />
+          <entry key="dummy" value="195" />
+          <entry key="py" value="38783" />
           <entry key="pyi" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="77" />
-          <entry key="Python" value="16783" />
+          <entry key="PLAIN_TEXT" value="195" />
+          <entry key="Python" value="38823" />
           <entry key="PythonStub" value="2" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,37 +79,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>first</find>
-      <find>Bfs</find>
-      <find>BfS</find>
-      <find>Queue</find>
-      <find>setPathCost</find>
-      <find>k:</find>
-      <find>element:</find>
-      <find>listObje</find>
+      <find>repo</find>
+      <find>slots</find>
+      <find>course</find>
+      <find>\n</find>
+      <find>win</find>
+      <find>Wins</find>
+      <find>pruned</find>
+      <find>AI</find>
+      <find>\n\n</find>
+      <find>d:</find>
+      <find>r:</find>
+      <find>-----</find>
+      <find>interval:</find>
+      <find>c1:</find>
+      <find>---------------------</find>
+      <find>print(le</find>
+      <find>len</find>
+      <find>len(</find>
+      <find>prin</find>
+      <find>courselist</find>
+      <find>print(''</find>
+      <find>pri</find>
+      <find>print</find>
+      <find>print(</find>
+      <find>print(i</find>
+      <find>print()</find>
       <find>time</find>
-      <find>__lt</find>
-      <find>lt</find>
-      <find>lt__</find>
-      <find>frontier.queue</find>
-      <find>fron</find>
-      <find>frontier.que</find>
-      <find>frontier.</find>
-      <find>frontier[0]</find>
-      <find>'-</find>
-      <find>i:</find>
-      <find>list</find>
-      <find>current</find>
-      <find>colorOne</find>
-      <find>sameI</find>
-      <find>queue.Q</find>
-      <find>colorI,</find>
-      <find>startIndex</find>
-      <find>draw</find>
-      <find>queue</find>
-      <find>queue.</find>
-      <find>chil</find>
+      <find>final</find>
+      <find>======</find>
+      <find>---</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -123,21 +134,32 @@
         <option value="$PROJECT_DIR$/Assignment_1/stableColoringBFS.py" />
         <option value="$PROJECT_DIR$/Assignment_1/WilliamColoring.py" />
         <option value="$PROJECT_DIR$/Assignment_1/SampleIDA*.py" />
-        <option value="$PROJECT_DIR$/Assignment_1/PuzzleA*.py" />
         <option value="$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py" />
         <option value="$PROJECT_DIR$/Assignment_1/NewColoringDFS.py" />
         <option value="$PROJECT_DIR$/Assignment_1/NewColoringBFS.py" />
         <option value="$PROJECT_DIR$/Assignment_1/SwapColoringDFS.py" />
-        <option value="$PROJECT_DIR$/Assignment_1/puzzleBFS.py" />
         <option value="$PROJECT_DIR$/Assignment_1/PuzzleDFS.py" />
+        <option value="$PROJECT_DIR$/Assignment_2/rough.py" />
+        <option value="$PROJECT_DIR$/Assignment_2/Sample_1_MiniMax_AB.py" />
+        <option value="$PROJECT_DIR$/Assignment_2/Sample_1_MiniMax.py" />
+        <option value="$PROJECT_DIR$/Assignment_1/PuzzleA*.py" />
+        <option value="$PROJECT_DIR$/Assignment_2/Sample_1_TTA_MA.py" />
+        <option value="$PROJECT_DIR$/Assignment_2/sorting.py" />
+        <option value="$PROJECT_DIR$/Assignment_2/Sample_1_TTS_CSP.py" />
+        <option value="$PROJECT_DIR$/Assignment_2/Sample_1_TTA_GA.py" />
+        <option value="$PROJECT_DIR$/Assignment_2/MiniMax.py" />
+        <option value="$PROJECT_DIR$/Assignment_2/MiniMax_AB.py" />
+        <option value="$PROJECT_DIR$/Assignment_1/puzzleBFS.py" />
+        <option value="$PROJECT_DIR$/Assignment_2/TTS_GA.py" />
+        <option value="$PROJECT_DIR$/Assignment_2/TTS_MA.py" />
+        <option value="$PROJECT_DIR$/Assignment_2/TTS_CSP.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="47" />
-    <option name="width" value="1221" />
-    <option name="height" value="595" />
+    <option name="y" value="25" />
+    <option name="width" value="1366" />
+    <option name="height" value="698" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -145,9 +167,17 @@
         <expanded-state>
           <State />
           <State>
+            <id>Python</id>
+          </State>
+          <State>
             <id>RegExp</id>
           </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>CommandLineInspection</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -159,7 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,17 +204,26 @@
             <path>
               <item name="ArtificialIntelligence" type="b2602c69:ProjectViewProjectNode" />
               <item name="ArtificialIntelligence" type="462c0819:PsiDirectoryNode" />
-              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment_2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MachineLearning" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="ArtificialIntelligence" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="ArtificialIntelligence" />
+      </console-settings>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -199,8 +237,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.puzzleBFS">
-    <configuration name="NewColoringBFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.TTS_CSP">
+    <configuration name="MiniMax" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ArtificialIntelligence" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -208,11 +246,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_1/SwapColoringBFS.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_2/MiniMax.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -221,7 +259,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="NewColoringDFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="MiniMax_AB" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ArtificialIntelligence" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -229,11 +267,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_1/SwapColoringDFS.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_2/MiniMax_AB.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -242,7 +280,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PuzzleDFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="TTS_CSP" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ArtificialIntelligence" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -250,11 +288,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_1/PuzzleDFS.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_2/TTS_CSP.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -263,7 +301,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PuzzleIDA*" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="TTS_GA" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ArtificialIntelligence" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -271,11 +309,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_2/TTS_GA.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -284,7 +322,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="puzzleBFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="TTS_MA" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ArtificialIntelligence" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -292,11 +330,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_1/puzzleBFS.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_2/TTS_MA.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -306,19 +344,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.puzzleBFS" />
-      <item itemvalue="Python.PuzzleIDA*" />
-      <item itemvalue="Python.NewColoringBFS" />
-      <item itemvalue="Python.NewColoringDFS" />
-      <item itemvalue="Python.PuzzleDFS" />
+      <item itemvalue="Python.TTS_MA" />
+      <item itemvalue="Python.TTS_CSP" />
+      <item itemvalue="Python.TTS_GA" />
+      <item itemvalue="Python.MiniMax" />
+      <item itemvalue="Python.MiniMax_AB" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.puzzleBFS" />
-        <item itemvalue="Python.PuzzleDFS" />
-        <item itemvalue="Python.NewColoringBFS" />
-        <item itemvalue="Python.NewColoringDFS" />
-        <item itemvalue="Python.PuzzleIDA*" />
+        <item itemvalue="Python.TTS_CSP" />
+        <item itemvalue="Python.TTS_MA" />
+        <item itemvalue="Python.TTS_GA" />
+        <item itemvalue="Python.MiniMax_AB" />
+        <item itemvalue="Python.MiniMax" />
       </list>
     </recent_temporary>
   </component>
@@ -338,14 +376,14 @@
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="698" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15227273" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12708019" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32922536" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32922536" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32809773" />
       <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.32922536" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32809773" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -354,19 +392,19 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="4" weight="0.32954547" />
-      <window_info anchor="right" id="Run" order="5" weight="0.3939394" />
-      <window_info anchor="right" id="Python Console" order="6" weight="0.3287879" />
+      <window_info anchor="right" id="Run" order="4" sideWeight="0.4991274" weight="0.6013616" />
+      <window_info anchor="right" id="Python Console" order="5" weight="0.32829046" />
+      <window_info anchor="right" id="R Graphics" order="6" sideWeight="0.5008726" side_tool="true" weight="0.48184568" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.05757576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12708019" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32922536" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32922536" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32809773" />
       <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.32922536" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32809773" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -375,9 +413,9 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="4" weight="0.32954547" />
-      <window_info active="true" anchor="right" id="Run" order="5" visible="true" weight="0.45833334" />
-      <window_info anchor="right" id="Python Console" order="6" weight="0.3287879" />
+      <window_info anchor="right" id="Run" order="4" sideWeight="0.4991274" weight="0.6013616" />
+      <window_info anchor="right" id="Python Console" order="5" weight="0.32829046" />
+      <window_info anchor="right" id="R Graphics" order="6" sideWeight="0.5008726" side_tool="true" weight="0.48184568" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -440,33 +478,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1/ColoringDFS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="278" lean-forward="true" selection-start-line="278" selection-end-line="278" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment_1/stableIDA*.py" />
     <entry file="file://$PROJECT_DIR$/Assignment_1/stableNewColoringBFS.py" />
-    <entry file="file://$PROJECT_DIR$/Assignment_1/ColoringBFS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="165" selection-start-line="165" selection-end-line="165" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment_1/WilliamColoring.py" />
     <entry file="file://$PROJECT_DIR$/Assignment_1/SampleIDA*.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/time.pyi">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleA*.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleIDA*.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -489,17 +506,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1/puzzleBFS.py">
+    <entry file="file://$PROJECT_DIR$/Assignment_1/ColoringBFS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="121" column="27" selection-start-line="121" selection-start-column="27" selection-end-line="121" selection-end-column="27" />
+        <state relative-caret-position="70">
+          <caret line="161" column="21" selection-end-line="332" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1/ColoringDFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="255" lean-forward="true" selection-start-line="255" selection-end-line="255" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="978" lean-forward="true" selection-start-line="978" selection-end-line="978" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_2/rough.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="110" column="44" lean-forward="true" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_2/Sample_1_MiniMax_AB.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_2/Sample_1_MiniMax.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9738">
+          <caret line="544" column="26" selection-start-line="544" selection-start-column="26" selection-end-line="544" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_2/Sample_1_TTA_MA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="408" lean-forward="true" selection-start-line="408" selection-end-line="408" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleDFS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="145" column="23" selection-start-line="145" selection-start-column="23" selection-end-line="145" selection-end-column="23" />
+        <state relative-caret-position="243">
+          <caret line="134" column="47" lean-forward="true" selection-start-line="134" selection-start-column="47" selection-end-line="134" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_2/sorting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1/PuzzleA*.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="355" lean-forward="true" selection-start-line="355" selection-end-line="355" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_2/Sample_1_TTS_CSP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="330" lean-forward="true" selection-start-line="330" selection-end-line="330" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_2/Sample_1_TTA_GA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_2/MiniMax.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="168" column="23" lean-forward="true" selection-start-line="168" selection-start-column="23" selection-end-line="168" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_2/MiniMax_AB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="418" column="33" lean-forward="true" selection-start-line="418" selection-start-column="33" selection-end-line="418" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1/puzzleBFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="243" selection-start-line="243" selection-end-line="244" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_2/TTS_GA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="476" column="39" lean-forward="true" selection-start-line="476" selection-start-column="39" selection-end-line="476" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_2/TTS_MA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="492" lean-forward="true" selection-start-line="492" selection-end-line="492" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_2/TTS_CSP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="272" column="32" selection-start-line="272" selection-start-column="32" selection-end-line="272" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
