@@ -1,0 +1,7 @@
+Cities=10
+ants=10
+Iterations=20
+Alpha=0.15
+Beta=0.3
+rho=0.4
+

@@ -1,0 +1,28 @@
+INPUT 1:
+
+	days: 3  slots: 3  rooms: 2
+	for each room:totalSlots:  9
+	courses count: 3
+	for all rooms: total slots:  18
+	--> length of chromosome:  18
+	start_time: 1539359354.1523936
+OUTPUT
+
+	[0, 0, 0, 1, 2, 3, 1, 2, 3, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+	end time: 1539359409.2998703
+	55.14752674102783
+	0:00:55 sec
+	Iterations: 22283
+output format: for each room(row) -all slots in a day
+		day1	  day2	    day3
+	room1	0 0 0  |  1 2 3  |  1 2 3  |  
+	room2	0 0 0  |  0 0 0  |  0 0 0  |  
+	
+	
+
+
+INPUT 2:
+
+
+OUTPUT:
+
